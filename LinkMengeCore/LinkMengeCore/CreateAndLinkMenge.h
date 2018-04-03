@@ -79,5 +79,7 @@
 
 		LINKMENGE_API void GetPositionAgents(agentInfo* agentsPos);
 
-		LINKMENGE_API bool SetGoalAgent(const char* idState, size_t idGoal);
+		LINKMENGE_API bool SetGoalAgent(size_t idAgent, size_t goalSetId, size_t goalId);
+
+		LINKMENGE_API void TeleportAgent(size_t idAgent, float x, float y);
 	};

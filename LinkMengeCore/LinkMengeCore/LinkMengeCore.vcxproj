@@ -104,14 +104,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;LINKMENGECORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\thirdParty;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\include;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\Plugins;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\Menge;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\thirdParty;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\include;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\Plugins;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\Menge;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>tinyxml_d.lib;MengeCore_d.lib;MengeVis_d.lib;OpenGL32.Lib;GlU32.lib;SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\102-Lebin\Documents\Lebin\Menge-master\projects\resources\win\lib\x64;C:\Users\102-Lebin\Documents\Lebin\Menge-master\projects\VS2015\Menge\build\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\projects\resources\win\lib\x64;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\projects\VS2015\Menge\build\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -140,7 +140,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>MENGEEXPORT;NDEBUG;LINKMENGECORE_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\102-Lebin\Documents\Lebin\Menge-master\src;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\Menge;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\Plugins;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\include;C:\Users\102-Lebin\Documents\Lebin\Menge-master\src\thirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\Menge;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge\src\Plugins;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\include;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\src\thirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
@@ -151,7 +151,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <AdditionalDependencies>MengeCore.lib;OpenGL32.Lib;GlU32.lib;SDL2.lib;SDL2main.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\102-Lebin\Documents\Lebin\Menge-master\projects\resources\win\lib\x64;C:\Users\102-Lebin\Documents\Lebin\Menge-master\projects\VS2015\Menge\build\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\projects\resources\win\lib\x64;C:\Users\102-Lebin\Documents\Lebin\Project\Menge\Menge-master\projects\VS2015\Menge\build\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

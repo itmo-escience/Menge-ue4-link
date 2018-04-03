@@ -191,22 +191,20 @@ void MengeManager::GetPositionAgents(agentInfo* agentsPos)
 	}
 }
 
-bool MengeManager::SetGoalAgent(const char * idState, size_t idGoal)
+bool MengeManager::SetGoalAgent(size_t idAgent, size_t goalSetId, size_t goalId)
 {
 	sim->getNumAgents();
 	Menge::BFSM::FSM* fsm = sim->getBFSM();
-	Menge::BFSM::GoalSet* t = fsm->getGoalSet(0);
-	std::string bufer = idState;
-	Menge::BFSM::State* states = fsm->getNode(bufer);
-	auto goalsel = states->getGoalSelector();
 	
-	auto test = dynamic_cast<Menge::BFSM::ExplicitGoalSelector*>(goalsel);
-	
-	if (test == nullptr) {
-		return false;		
-	}
-		
-	auto y = t->getGoalByID(idGoal);
-	test->setGoalID((size_t)y);
+	fsm->SetGoalForActor(idAgent, goalSetId, goalId);
+
 	return true;
+}
+
+LINKMENGE_API void MengeManager::TeleportAgent(size_t idAgent, float x, float y)
+{
+	sim->getNumAgents();
+	Menge::BFSM::FSM* fsm = sim->getBFSM();
+
+	fsm->TeleportActor(idAgent, x, y);
 }
