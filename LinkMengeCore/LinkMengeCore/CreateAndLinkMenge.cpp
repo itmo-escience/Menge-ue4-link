@@ -41,6 +41,8 @@
 #include "MengeCore/resources/VectorField.h"
 #include "MengeCore/Runtime/Logger.h"
 #include "MengeCore/Runtime/os.h"
+#include "Menge\MengeCore\Agents\Elevations\Elevation.h"
+#include "Menge\MengeCore\Agents\Elevations\ElevationNavMesh.h"
 
 #include "MengeCore/resources/ResourceManager.h"
 
@@ -174,6 +176,7 @@ void MengeManager::GetPositionAgents(agentInfo* agentsPos)
 			Menge::Math::Vector2 ao = a->_orient;
 			agentsPos[i].running = true;
 			agentsPos[i].agentNumber = i;
+			agentsPos[i].elevation = sim->getElevation(a);
 			agentsPos[i].pos = new float[2];
 			agentsPos[i].pos[0] = ac.x();
 			agentsPos[i].pos[1] = ac.y();

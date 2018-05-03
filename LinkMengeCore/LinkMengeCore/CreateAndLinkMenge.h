@@ -15,6 +15,7 @@
 	{
 		bool running;
 		int agentNumber;
+		float elevation;
 		float* pos;
 		float* vel;
 		float* velnew;
