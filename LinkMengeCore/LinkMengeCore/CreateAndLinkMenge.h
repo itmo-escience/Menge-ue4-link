@@ -20,6 +20,7 @@
 		float* vel;
 		float* velnew;
 		float* orient;
+		int state;
 	};
 
 	namespace  Menge

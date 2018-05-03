@@ -174,6 +174,7 @@ void MengeManager::GetPositionAgents(agentInfo* agentsPos)
 			Menge::Math::Vector2 av = a->_vel;
 			Menge::Math::Vector2 avn = a->_velNew;
 			Menge::Math::Vector2 ao = a->_orient;
+			int state = a->_statePath;
 			agentsPos[i].running = true;
 			agentsPos[i].agentNumber = i;
 			agentsPos[i].elevation = sim->getElevation(a);
@@ -189,6 +190,7 @@ void MengeManager::GetPositionAgents(agentInfo* agentsPos)
 			agentsPos[i].orient = new float[2];
 			agentsPos[i].orient[0] = ao.x();
 			agentsPos[i].orient[1] = ao.y();
+			agentsPos[i].state = state;
 		}
 		running = false;
 	}
