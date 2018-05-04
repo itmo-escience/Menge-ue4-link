@@ -11,6 +11,15 @@
 #endif // MENGEEXPORT_API
 
 
+	enum stateAgent
+	{
+		RUN = 1,
+		FINISH = 0,
+		GOAL_OUTSIDE = -1,
+		START_NODE_OUTSIDE = -2,
+		NO_PATH = -3
+	};
+
 	struct agentInfo
 	{
 		bool running;
@@ -20,8 +29,8 @@
 		float* vel;
 		float* velnew;
 		float* orient;
-		int state;
-	};
+		stateAgent state;
+	};	
 
 	namespace  Menge
 	{

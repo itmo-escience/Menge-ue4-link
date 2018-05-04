@@ -190,7 +190,7 @@ void MengeManager::GetPositionAgents(agentInfo* agentsPos)
 			agentsPos[i].orient = new float[2];
 			agentsPos[i].orient[0] = ao.x();
 			agentsPos[i].orient[1] = ao.y();
-			agentsPos[i].state = state;
+			agentsPos[i].state = stateAgent(state);
 		}
 		running = false;
 	}
